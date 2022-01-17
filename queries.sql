@@ -34,3 +34,10 @@ BEGIN;
 UPDATE animals SET species = 'pokemon' -- set all to pokemon
 UPDATE animals SET species = 'digimon' WHERE name LIKE '%mon'; -- set all ending in mon to digimon
 COMMIT; -- after checking if everything works commit
+
+
+-- delete all records in transaction and rollback
+BEGIN;
+DELETE FROM animals;
+ROLLBACK;
+
