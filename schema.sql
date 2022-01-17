@@ -1,13 +1,8 @@
-CREATE TABLE public."Animals"
-(
-    id integer,
-    name "char",
-    date_of_birth date,
-    escape_attempts integer,
-    neutered boolean,
-    weight_kg numeric(10, 2)[],
-    PRIMARY KEY (id)
+CREATE TABLE animals(
+    id INT,
+    name VARCHAR(100),
+    date_of_birth DATE,
+    escape_attempts INT,
+    neutered BOOLEAN,
+    weight_kg DEC(15,2)
 );
-
-ALTER TABLE IF EXISTS public."Animals"
-    OWNER to postgres;
