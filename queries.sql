@@ -29,3 +29,8 @@ SELECT * FROM animals;
 ROLLBACK;
 SELECT * FROM animals; 
 
+-- set species to pokemon/ digimon
+BEGIN;
+UPDATE animals SET species = 'pokemon' -- set all to pokemon
+UPDATE animals SET species = 'digimon' WHERE name LIKE '%mon'; -- set all ending in mon to digimon
+COMMIT; -- after checking if everything works commit
