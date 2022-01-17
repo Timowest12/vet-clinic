@@ -1,4 +1,3 @@
-
 CREATE TABLE IF NOT EXISTS public."Animals"
 (
     id integer NOT NULL,
