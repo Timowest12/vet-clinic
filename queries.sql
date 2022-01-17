@@ -21,5 +21,11 @@ SELECT * FROM animals WHERE name='Gabumon';
 
 SELECT * FROM animals WHERE weight_kg BETWEEN 10.4 and 17.3;
 
+-- transaction update spacies with rollback
 
+BEGIN;
+UPDATE animals SET species = 'unspecified';
+SELECT * FROM animals; 
+ROLLBACK;
+SELECT * FROM animals; 
 
