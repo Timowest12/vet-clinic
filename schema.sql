@@ -1,7 +1,3 @@
--- Table: public.Animals
-
--- DROP TABLE IF EXISTS public."Animals";
-
 CREATE TABLE IF NOT EXISTS public."Animals"
 (
     id integer NOT NULL,
