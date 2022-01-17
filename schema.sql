@@ -4,5 +4,5 @@ CREATE TABLE animals(
     date_of_birth DATE,
     escape_attempts INT,
     neutered BOOLEAN,
-    weight_kg DEC(15,2)
+    weight_kg DEC(10,2)
 );
