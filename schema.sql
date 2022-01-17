@@ -7,6 +7,8 @@ CREATE TABLE animals(
     weight_kg DEC(10,2)
 );
 
+result:
+
      Column      |          Type          | Collation | Nullable | Default
 -----------------+------------------------+-----------+----------+---------
  id              | integer                |           |          |
