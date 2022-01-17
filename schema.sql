@@ -1,14 +1,13 @@
-CREATE TABLE IF NOT EXISTS public."Animals"
+CREATE TABLE public."Animals"
 (
-    id integer NOT NULL,
-    name text COLLATE pg_catalog."default",
+    id integer,
+    name "char",
     date_of_birth date,
-    escape_attempts boolean,
-    weight numeric(10,2),
-    CONSTRAINT "Animals_pkey" PRIMARY KEY (id)
-)
-
-TABLESPACE pg_default;
+    escape_attempts integer,
+    neutered boolean,
+    weight_kg numeric(10, 2)[],
+    PRIMARY KEY (id)
+);
 
 ALTER TABLE IF EXISTS public."Animals"
     OWNER to postgres;
