@@ -1,15 +1,9 @@
+CREATE TABLE animals(
+    id INT,
+    name VARCHAR(100),
+    date_of_birth DATE,
+    escape_attempts INT,
+    neutered BOOLEAN,
+    weight_kg DEC(10,2)
+);
 
-CREATE TABLE IF NOT EXISTS public."Animals"
-(
-    id integer NOT NULL,
-    name text COLLATE pg_catalog."default",
-    date_of_birth date,
-    escape_attempts boolean,
-    weight numeric(10,2),
-    CONSTRAINT "Animals_pkey" PRIMARY KEY (id)
-)
-
-TABLESPACE pg_default;
-
-ALTER TABLE IF EXISTS public."Animals"
-    OWNER to postgres;
