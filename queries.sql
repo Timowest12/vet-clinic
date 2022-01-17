@@ -50,3 +50,24 @@ UPDATE animals SET eight_kg = eight_kg * -1;
 ROLLBACK TO deletefirst;
 UPDATE animals SET eight_kg = eight_kg * -1 WHERE eight_kg < 0;
 COMMIT
+
+
+
+--advanced queries for analytics
+--checking how many animals in table
+SELECT COUNT(name) FROM animals;
+
+--count number of animals that never tried to escape
+SELECT COUNT(escape_attempts) FROM animals WHERE escape_attempts = 0;
+
+--calculate average weight from animals using build in sql functions
+SELECT AVG(eight_kg) FROM animals;
+
+--most escaping animal
+SELECT name FROM animals WHERE escape_attempts =(SELECT MAX(escape_attempts) FROM animals);
+
+--minimum and maximum weight of each type by animal
+SELECT species, MIN(weight_kg), MAX(weight_kg) FROM animals GROUP BY species;
+
+--average number of escapes of animals born between 1990 and 2000
+SELECT species, AVG(escape_attempts) FROM animals WHERE date_of_birth>='1-1-1990' AND date_of_birth<'1-1-2000' GROUP BY species;
