@@ -7,3 +7,4 @@ CREATE TABLE animals(
     weight_kg DEC(10,2)
 );
 
+ALTER TABLE animals ADD species varchar(255);
