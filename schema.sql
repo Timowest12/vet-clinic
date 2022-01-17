@@ -1,5 +1,5 @@
 CREATE TABLE animals(
-    id INT,
+    id SERIAL PRIMARY KEY,
     name VARCHAR(100),
     date_of_birth DATE,
     escape_attempts INT,
