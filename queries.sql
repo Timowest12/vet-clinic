@@ -41,3 +41,12 @@ BEGIN;
 DELETE FROM animals;
 ROLLBACK;
 
+
+-- advanced transaction
+BEGIN;
+DELETE FROM animals WHERE date_of_birth > '2022-01-01';
+savepoint deletefirst;
+UPDATE animals SET eight_kg = eight_kg * -1;
+ROLLBACK TO deletefirst;
+UPDATE animals SET eight_kg = eight_kg * -1 WHERE eight_kg < 0;
+COMMIT
