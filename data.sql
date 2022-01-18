@@ -43,3 +43,11 @@ VALUES (
         'Jodie Whittaker',
         38
     );
+    
+--insert species
+--Pokemon
+INSERT INTO species (name)
+VALUES ('Pokemon');
+--Digimon
+INSERT INTO species (name)
+VALUES ('Digimon');
