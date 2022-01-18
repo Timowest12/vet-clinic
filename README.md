@@ -21,6 +21,7 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 ![Timo's GitHub stats](https://github-readme-stats.vercel.app/api?username=Timowest12&count_private=true&theme=dark&show_icons=true)
 
+
 ## features
 In this project I created multiple tables in a database and did advanced SQL queries to learn more about how databases work in depth.
 
