@@ -59,3 +59,14 @@ UPDATE animals SET species_id=2 WHERE name LIKE '%mon';
 UPDATE animals SET species_id=1;
 
 
+--give ownership to animals
+--Sam Smith owns Agumon.
+UPDATE animals SET owner_id=1 WHERE name='Agumon';
+--Jennifer Orwell owns Gabumon and Pikachu.
+UPDATE animals SET owner_id=2 WHERE name IN ('Gabumon','Pikachu');
+--Bob owns Devimon and Plantmon.
+UPDATE animals SET owner_id=3 WHERE name IN ('Devimon','Plantmon');
+--Melody Pond owns Charmander, Squirtle, and Blossom.
+UPDATE animals SET owner_id=4 WHERE name IN ('Charmander','Squirtle','Blossom');
+--Dean Winchester owns Angemon and Boarmon.
+UPDATE animals SET owner_id=5 WHERE name IN ('Angemon','Boarmon');
