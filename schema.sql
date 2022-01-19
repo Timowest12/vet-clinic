@@ -24,7 +24,7 @@ CREATE TABLE species(
    
    
   --vets table
-CREATE TABLE species(
+CREATE TABLE vets(
    id SERIAL PRIMARY KEY,
    name VARCHAR(100),
    age INT,
