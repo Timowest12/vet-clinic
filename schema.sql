@@ -22,6 +22,15 @@ CREATE TABLE species(
    name VARCHAR(100)
    );
    
+   
+  --vets table
+CREATE TABLE species(
+   id SERIAL PRIMARY KEY,
+   name VARCHAR(100),
+   age INT,
+   date_of_graduation DATE
+   );
+   
    --Make sure that id is set as autoincremented PRIMARY KEY- DONE
 
 --drop species column
